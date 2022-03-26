@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-export type ViteHotContext = ImportMeta['hot']
+export type ViteHotContext = Exclude<ImportMeta['hot'], undefined>
 
 export interface ViteClient {
   createHotContext(path: string): ViteHotContext
