@@ -16,17 +16,6 @@ Get Vite's `import.meta.hot` at runtime.
 npm i vite-hot-client
 ```
 
-```ts
-// vite.config.js
-export default {
-  optimizeDeps: {
-    exclude: [
-      'vite-hot-client',
-    ],
-  },
-}
-```
-
 ## Usage
 
 ```js
