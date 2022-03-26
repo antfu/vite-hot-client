@@ -10,6 +10,23 @@ Get Vite's `import.meta.hot` at runtime.
 - [`@unocss/inspector`](https://github.com/unocss/unocss/tree/main/packages/inspector)
 - [`@vitest/ui`](https://github.com/vitest-dev/vitest/tree/main/packages/ui)
 
+## Install
+
+```bash
+npm i vite-hot-client
+```
+
+```ts
+// vite.config.js
+export default {
+  optimizeDeps: {
+    exclude: [
+      'vite-hot-client',
+    ],
+  },
+}
+```
+
 ## Usage
 
 ```js
