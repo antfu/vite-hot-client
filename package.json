@@ -37,7 +37,7 @@
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
-    "vite": "^2.6"
+    "vite": "^2.6.0 || ^3.0.0-0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.18.9",
