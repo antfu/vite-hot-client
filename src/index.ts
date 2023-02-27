@@ -43,5 +43,5 @@ export async function tryCreateHotContext(path = '/___', bases?: string[]): Prom
     if (hot)
       return hot
   }
-  console.error(`[vite-plugin-hot] Failed to import vite client, tried with:`, bases)
+  console.error('[vite-plugin-hot] Failed to import vite client, tried with:', bases)
 }
