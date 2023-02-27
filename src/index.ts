@@ -21,6 +21,3 @@ export async function createHotContext(path = '/____', base = '/'): Promise<Vite
   const viteClient = await getViteClient(base)
   return viteClient?.createHotContext(path)
 }
-
-/** Anonymous hot context **/
-export const hot = await createHotContext()
