@@ -40,18 +40,18 @@
     "vite": "^2.6.0 || ^3.0.0-0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.31.0",
-    "@antfu/ni": "^0.18.8",
-    "@babel/types": "^7.20.2",
-    "@types/node": "^18.11.9",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.28.0",
+    "@antfu/eslint-config": "^0.35.3",
+    "@antfu/ni": "^0.20.0",
+    "@babel/types": "^7.21.2",
+    "@types/node": "^18.14.2",
+    "bumpp": "^9.0.0",
+    "eslint": "^8.35.0",
     "esno": "^0.16.3",
-    "pnpm": "^7.17.0",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.9.3",
-    "unbuild": "^1.0.1",
-    "vite": "^3.2.4",
-    "vitest": "^0.25.2"
+    "pnpm": "^7.28.0",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.5",
+    "unbuild": "^1.1.2",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.1"
   }
 }
