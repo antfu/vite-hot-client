@@ -11,11 +11,19 @@ export interface ViteClient {
  */
 export async function getViteClient(base = '/', warning = true): Promise<ViteClient | undefined> {
   try {
-    return await import(/* @vite-ignore */ `${base}@vite/client`)
+    const url = `${base}@vite/client`
+
+    // pre-verify if the url is valid
+    const res = await fetch(url)
+    const text = await res.text()
+    if (text.startsWith('<') || !res.headers.get('content-type')?.includes('javascript'))
+      throw new Error('Not javascript')
+
+    return await import(/* @vite-ignore */ url)
   }
   catch {
     if (warning)
-      console.error(`[vite-plugin-hot] Failed to import "${base}@vite/client"`)
+      console.error(`[vite-hot-client] Failed to import "${base}@vite/client"`)
   }
   return undefined
 }
@@ -43,5 +51,5 @@ export async function tryCreateHotContext(path = '/___', bases?: string[]): Prom
     if (hot)
       return hot
   }
-  console.error('[vite-plugin-hot] Failed to import vite client, tried with:', bases)
+  console.error('[vite-hot-client] Failed to import vite client, tried with:', bases)
 }
