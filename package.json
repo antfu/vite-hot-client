@@ -2,7 +2,7 @@
   "name": "vite-hot-client",
   "type": "module",
   "version": "0.2.2",
-  "packageManager": "pnpm@8.7.0",
+  "packageManager": "pnpm@8.10.5",
   "description": "Get Vite's import.meta.hot at runtime.",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
   "license": "MIT",
@@ -40,18 +40,18 @@
     "vite": "^2.6.0 || ^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.41.0",
-    "@antfu/ni": "^0.21.6",
-    "@babel/types": "^7.22.11",
-    "@types/node": "^18.17.12",
+    "@antfu/eslint-config": "^1.1.4",
+    "@antfu/ni": "^0.21.9",
+    "@babel/types": "^7.23.3",
+    "@types/node": "^20.9.0",
     "bumpp": "^9.2.0",
-    "eslint": "^8.48.0",
-    "esno": "^0.17.0",
-    "pnpm": "^8.7.0",
-    "rimraf": "^5.0.1",
+    "eslint": "^8.53.0",
+    "esno": "^4.0.0",
+    "pnpm": "^8.10.5",
+    "rimraf": "^5.0.5",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.3"
+    "vite": "^5.0.0",
+    "vitest": "^0.34.6"
   }
 }
