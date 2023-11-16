@@ -1,7 +1,7 @@
 {
   "name": "vite-hot-client",
   "type": "module",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "packageManager": "pnpm@8.10.5",
   "description": "Get Vite's import.meta.hot at runtime.",
   "author": "Anthony Fu <anthonyfu117@hotmail.com>",
