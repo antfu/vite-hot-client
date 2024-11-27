@@ -3,7 +3,7 @@
 export type ViteHotContext = Exclude<ImportMeta['hot'], undefined>
 
 export interface ViteClient {
-  createHotContext(path: string): ViteHotContext
+  createHotContext: (path: string) => ViteHotContext
 }
 
 /**
