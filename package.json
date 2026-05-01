@@ -34,6 +34,7 @@
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp",
+    "test": "vitest",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
